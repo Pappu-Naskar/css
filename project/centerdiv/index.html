@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>center div</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        background-color: black;
+        /* 1st trick */
+        /* position: relative; */
+        /* 2nd trick */
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        /* 3rd trick */
+        /* display: grid;
+        place-items: center; */
+        /* 4th */
+        display: grid;
+      }
+
+      .child {
+        width: 400px;
+        height: 400px;
+        background-color: #865dff;
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+        /* 5th trick */
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="child">hi</div>
+  </body>
+</html>
